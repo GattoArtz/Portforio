@@ -42,5 +42,12 @@ fetch("data/works.json")
       </div>
     `;
   });
+const detail = document.querySelector(".detail-page");
+if (detail) {
+  detail.classList.add("animate");
+  requestAnimationFrame(() => {
+    detail.classList.add("show");
+  });
+}
 
 });
