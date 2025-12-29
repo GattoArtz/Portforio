@@ -52,4 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = "<p>記事の読み込みに失敗しました。</p>";
       console.error(err);
     });
+
+    const detail = document.querySelector(".detail-page");
+if (detail) {
+  detail.classList.add("animate");
+  requestAnimationFrame(() => {
+    detail.classList.add("show");
+  });
+}
+
 });
