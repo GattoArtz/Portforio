@@ -352,11 +352,13 @@ body.dark .theme-toggle {
 
 @media (max-width: 768px) {
 
-      .tag-filter {
+    .tag-filter {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+
+
   .nav {
     display: none;
   }
@@ -365,25 +367,45 @@ body.dark .theme-toggle {
     display: block;
   }
 
-  .mobile-nav {
-    position: fixed;
-    top: 64px;
-    right: 0;
-    width: 100%;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 24px;
-    transform: translateY(-120%);
-    transition: transform 0.35s ease;
-    z-index: 9998;
-  }
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-  .mobile-nav.open {
-    transform: translateY(0);
-  }
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 88px 24px 24px;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+
+  z-index: 999;
+}
+
+.mobile-nav.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.mobile-nav.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
   
     /* テキスト全体を中央寄せ */
   .hero-text {
@@ -480,7 +502,7 @@ body.dark .theme-toggle {
   cursor: pointer;
 }
 
-/* Mobile Nav */
+/* Mobile Nav */ /*
 .mobile-nav {
   display: none;
 }
@@ -528,4 +550,39 @@ body.dark .theme-toggle {
   animation: fadeUp 0.8s forwards;
   animation-delay: 0.6s;
 }
+
+/* =====================
+   Hamburger FINAL FIX
+===================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block ;
+  }
+}
+
+/* PCではモバイルメニューを完全に殺す */
+.mobile-nav {
+  display: none;
+}
+
+/* モバイル時だけ復活 */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+
+  .pc-nav {
+    display: none;
+  }
+}
+
+
 
