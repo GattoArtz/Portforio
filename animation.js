@@ -1,24 +1,28 @@
-function observeListItems() {
-  const items = document.querySelectorAll(".list-item");
-  if (!items.length) return;
+window.addEventListener("load", () => {
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target);
-        }
+  /* ===== Home Animation ===== */
+  const homeHero = document.querySelector(".home-hero.animate");
+  if (homeHero) {
+    // 初期状態を確実に適用
+    homeHero.classList.remove("show");
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        homeHero.classList.add("show");
       });
-    },
-    { threshold: 0.15 }
-  );
+    });
+  }
 
-  items.forEach(item => observer.observe(item));
-}
+  /* ===== Detail Page Animation ===== */
+  const detailPage = document.querySelector(".detail-page.animate");
+  if (detailPage) {
+    detailPage.classList.remove("show");
 
-// 初回
-document.addEventListener("DOMContentLoaded", observeListItems);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        detailPage.classList.add("show");
+      });
+    });
+  }
 
-// 再描画用（タグ切替など）
-window.observeListItems = observeListItems;
+});
