@@ -352,7 +352,11 @@ body.dark .theme-toggle {
 
 @media (max-width: 768px) {
 
-  
+      .tag-filter {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
   .nav {
     display: none;
   }
@@ -524,3 +528,4 @@ body.dark .theme-toggle {
   animation: fadeUp 0.8s forwards;
   animation-delay: 0.6s;
 }
+
