@@ -6,22 +6,24 @@
     "year": "2025",
     "tags": ["branding"],
     "thumb": "images/Thumbs/works/20251228.jpg",
-    "media": ["images/ChallengersCup/1.jpg","images/ChallengersCup/2.jpg","images/ChallengersCup/3.jpg","images/ChallengersCup/4.jpg"],
-    "content": "REVATI CHALLENGERS CUP 告知画像 / 対戦表 / メンバー紹介画像 etc...<br>詳しくは<u><a href=\"https://x.com/revati_jp/status/2000491019352387692\">公式ツイート</a></u>もしくは<u><a href=\"https://www.youtube.com/@revati_jp\">配信</a></u>をご確認ください！<br>"
-
+    "media": [
+      "images/ChallengersCup/1.jpg",
+      "images/ChallengersCup/2.jpg",
+      "images/ChallengersCup/3.jpg",
+      "images/ChallengersCup/4.jpg"
+    ],
+    "content": "REVATI CHALLENGERS CUP 告知画像 / 対戦表 / メンバー紹介画像 etc...<br>詳しくは<u><a href=\"https://x.com/revati_jp/status/2000491019352387692\">公式ツイート</a></u>"
   },
-
   {
-   "id": "REVATI-GiveAway2025",
-　 "title": "【Design】REVATI GiveAway 告知画像",
-　 "description": "Brandings",
-　 "year": "2025",
-　 "tags": ["branding"],
-　 "thumb": "images/Thumbs/works/20251231.jpg",
-　 "media": ["images/Thumbs/works/20251231.jpg",],
-　 "content": "REVATI GiveAway 告知画像の制作を担当させていただきました！<br>参加は<u><a href=\"https://x.com/revati_jp/status/2006289224488931800?s=46\">こちら</a></u>から！<br>※マウスパッド自体のイラストは<u><a href=\"https://x.com/AOtalt3\">あお7さん</a></u>、デザインは<u><a href=\"https://x.com/345mimasaka\"美作小夜子さん></a></u>が担当されています！"
+    "id": "REVATI-GiveAway2025",
+    "title": "【Design】REVATI GiveAway 告知画像",
+    "description": "Brandings",
+    "year": "2025",
+    "tags": ["branding"],
+    "thumb": "images/Thumbs/works/20251231.jpg",
+    "media": [
+      "images/Thumbs/works/20251231.jpg"
+    ],
+    "content": "REVATI GiveAway 告知画像の制作を担当させていただきました！<br>参加は<u><a href=\"https://x.com/revati_jp/status/2006289224488931800?s=46\">こちら</a></u>"
   }
-
 ]
-
-
