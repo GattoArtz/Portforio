@@ -25,9 +25,10 @@
 
 {"type":"image","value":"images/PicoCTF/Local Authority/3.png"},
 
-{"type":"image","value":"送ってみると、まぁ当然ですが失敗しました。そこでとりあえずInspectのNetworkを開いてログインの様子を見てみます。実際に見てみると、login.php,style.css,secure.jsが読み込まれていることがわかります。この中だとlogin.phpとsecure.jsが怪しいかなーと思いながら、とりあえずlogin.phpを見てみます。すると、<br><code>    <form hidden action="admin.php" method="post" id="hiddenAdminForm"></code><br>という一文が。これを見る感じ、adminでログインできればフラッグを獲得できるかなーという見立てが立ちました。次はsecure.jsを見てみます。すると、<br><code>username === 'admin' && password === 'strongPassword098765'</code><br>という条件式が見つかります。これは勝ち確ですね。早速見つけたpasswordでadminとしてログインします。<br><br>----------<br>br>結果、ログインが成功しフラッグが獲得できました。(具体的なフラグは伏せておきます)"<br><br>----------<br><br>今回のWriteupはこれで終わりですね。いかがでしたでしょうか。かなり簡単なので比較的短いですが、まぁそれっぽくはなったのかも？あくまでも私の勉強目当てなので、ご愛嬌ください。。。(毎回これで逃げますが)"},
+{"type":"image","value":"送ってみると、まぁ当然ですが失敗しました。そこでとりあえずInspectのNetworkを開いてログインの様子を見てみます。実際に見てみると、login.php,style.css,secure.jsが読み込まれていることがわかります。この中だとlogin.phpとsecure.jsが怪しいかなーと思いながら、とりあえずlogin.phpを見てみます。すると、<br>\n'<form hidden action="admin.php" method="post" id="hiddenAdminForm">'"<br>という一文が。これを見る感じ、adminでログインできればフラッグを獲得できるかなーという見立てが立ちました。次はsecure.jsを見てみます。すると、<br><code>username === 'admin' && password === 'strongPassword098765'</code><br>という条件式が見つかります。これは勝ち確ですね。早速見つけたpasswordでadminとしてログインします。<br><br>----------<br>br>結果、ログインが成功しフラッグが獲得できました。(具体的なフラグは伏せておきます)"<br><br>----------<br><br>今回のWriteupはこれで終わりですね。いかがでしたでしょうか。かなり簡単なので比較的短いですが、まぁそれっぽくはなったのかも？あくまでも私の勉強目当てなので、ご愛嬌ください。。。(毎回これで逃げますが)"},
   ]}
 ]
+
 
 
 
