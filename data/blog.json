@@ -25,7 +25,7 @@
       },
       {
         "type": "image",
-        "value": "images/PicoCTF/Local Authority/1.png"
+        "src": "images/PicoCTF/Local Authority/1.png"
       },
       {
         "type": "text",
@@ -33,7 +33,7 @@
       },
       {
         "type": "image",
-        "value": "images/PicoCTF/Local Authority/2.png"
+        "src": "images/PicoCTF/Local Authority/2.png"
       },
       {
         "type": "text",
@@ -41,7 +41,7 @@
       },
       {
         "type": "image",
-        "value": "images/PicoCTF/Local Authority/3.png"
+        "src": "images/PicoCTF/Local Authority/3.png"
       },
       {
         "type": "text",
@@ -50,4 +50,5 @@
     ]
   }
 ]
+
 
